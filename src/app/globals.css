@@ -78,7 +78,6 @@ header {
     position: relative;
     h1 {
       color: #fffa;
-      font-family: Helvetica, sans-serif;
       margin-inline: 20px;
     }
     ul {
@@ -138,6 +137,7 @@ header {
 
 /* print-msg Style */
 .print-msg {
+  padding-top: 57px;
   width: 100%;
   /* layout */
   align-items: center;

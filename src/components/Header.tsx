@@ -1,8 +1,15 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { Rubik } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
+
+const rubik = Rubik({
+  subsets: ["latin"],
+  weight: ["500"],
+  display: "swap",
+});
 
 export default function Header() {
   const [date, setDate] = useState({
@@ -31,7 +38,7 @@ export default function Header() {
     <>
       <header>
         <div className="header-container">
-          <h1>Saladmaki</h1>
+          <h1 className={rubik.className}>Saladmaki</h1>
           <ul>
             <li>
               <Link href="https://github.com/saladmaki" target="_blank">

@@ -28,7 +28,6 @@
 
 /* Main Styles */
 .main {
-  padding-block: 57px;
   z-index: 0;
   .content {
     display: flex;
