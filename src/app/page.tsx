@@ -103,11 +103,10 @@ Game Development: Unity
                 : Simple calculator made in C language.
               </li>
               <li>
-                <Link href="https://github.com/my-profile-site/" download="">
-                  3D model
+                <Link href="./">
+                  Lorem, ipsum.
                 </Link>
-                : This donut was created using Blender. You can download it by
-                clicking the link.
+                : Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis possimus ea beatae fuga? Quisquam!
               </li>
             </ul>
           </section>
