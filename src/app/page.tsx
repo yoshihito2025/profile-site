@@ -5,9 +5,9 @@ import { title } from "process";
 export const generateMetadata = () => {
   return {
     title: "Saladmaki - Profile Site",
-    description: "Profile of Saladmaki"
-  }
-}
+    description: "Profile of Saladmaki",
+  };
+};
 
 export default function Home() {
   return (
@@ -103,10 +103,10 @@ Game Development: Unity
                 : Simple calculator made in C language.
               </li>
               <li>
-                <Link href="./">
-                  Lorem, ipsum.
+                <Link href="https://github.com/saladmaki/realtime-chat-app">
+                  Realtime chat
                 </Link>
-                : Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis possimus ea beatae fuga? Quisquam!
+                : Real-time chat application build with Express and Socket.IO.
               </li>
             </ul>
           </section>
