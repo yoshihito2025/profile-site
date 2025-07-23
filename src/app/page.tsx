@@ -104,7 +104,7 @@ Game Development: Unity
               </li>
               <li>
                 <Link href="https://github.com/saladmaki/realtime-chat-app">
-                  Realtime chat
+                  Real-time chat
                 </Link>
                 : Real-time chat application build with Express and Socket.IO.
               </li>
