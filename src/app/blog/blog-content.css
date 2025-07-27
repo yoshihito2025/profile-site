@@ -1,4 +1,4 @@
-.article-list {
+.contents {
   /* Layout */
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -43,7 +43,7 @@
   h1 {
     font-size: 2rem;
   }
-  .article-list {
+  .contents {
     grid-template-columns: 1fr 5fr 1fr;
     padding: 20px 0;
   }

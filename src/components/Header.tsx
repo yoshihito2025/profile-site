@@ -60,7 +60,7 @@ export default function Header() {
           <Image
             width={100}
             height={100}
-            src="./logo.svg"
+            src="/logo.svg"
             alt="Saladmaki's Logo"
             className="logo"
           />
