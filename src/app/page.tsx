@@ -110,6 +110,17 @@ Game Development: Unity
               </li>
             </ul>
           </section>
+          <section>
+            <h3>📁 SiteMap</h3>
+            <ul>
+              <li>
+                <Link href="./blog/" target="_blank">
+                  /blog
+                </Link>
+                : My blog site!
+              </li>
+            </ul>
+          </section>
         </div>
       </main>
     </>

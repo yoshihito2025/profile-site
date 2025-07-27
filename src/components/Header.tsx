@@ -38,7 +38,9 @@ export default function Header() {
     <>
       <header>
         <div className="header-container">
-          <h1 className={rubik.className}>Saladmaki</h1>
+          <Link href="/">
+            <h1 className={rubik.className}>Saladmaki</h1>
+          </Link>
           <ul>
             <li>
               <Link href="https://github.com/saladmaki" target="_blank">

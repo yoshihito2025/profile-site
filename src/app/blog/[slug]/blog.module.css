@@ -1,0 +1,23 @@
+.content {
+  /* layout */
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  .container {
+    grid-column: 2;
+    h2 {
+      font-size: 1.5rem;
+      line-height: 2;
+      margin-block: 30px;
+      padding-left: 10px;
+      border-color: light-dark(#050e1a, #e9eff7);
+      border-top: 1px solid;
+      border-left: 10px solid;
+    }
+  }
+}
+
+@media (width <= 820px) {
+  .content {
+    grid-template-columns: 1fr 20fr 1fr;
+  }
+}
