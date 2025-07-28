@@ -1,3 +1,5 @@
+export const dynamic = "force-static";
+
 import Link from "next/link";
 import styles from "./page.module.css";
 import { title } from "process";
