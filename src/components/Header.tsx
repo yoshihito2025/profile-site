@@ -7,28 +7,29 @@ import Link from "next/link";
 
 const rubik = Rubik({
   subsets: ["latin"],
-  weight: ["500"],
+  weight: ["700"],
   display: "swap",
 });
 
 export default function Header() {
   const [date, setDate] = useState({
-    Mo: 0,
-    Da: 0,
-    Ho: 0,
-    Mi: 0,
-    Se: 0,
+    Mo: "00",
+    Da: "00",
+    Ho: "00",
+    Mi: "00",
+    Se: "00",
   });
 
   useEffect(() => {
     const interval = setInterval(() => {
+      const pad = (n: number) => n.toString().padStart(2, "0");
       const now = new Date();
       setDate({
-        Mo: now.getMonth() + 1,
-        Da: now.getDate(),
-        Ho: now.getHours(),
-        Mi: now.getMinutes(),
-        Se: now.getSeconds(),
+        Mo: pad(now.getMonth() + 1),
+        Da: pad(now.getDate()),
+        Ho: pad(now.getHours()),
+        Mi: pad(now.getMinutes()),
+        Se: pad(now.getSeconds()),
       });
     }, 1000);
     return () => clearInterval(interval);

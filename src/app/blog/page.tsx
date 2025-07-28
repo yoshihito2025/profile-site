@@ -10,6 +10,13 @@ type ArticleMeta = {
   slug: string;
 };
 
+export const generateMetadata = () => {
+  return {
+    title: "Blog page - Saladmaki",
+    description: "Blog page of Saladmaki",
+  };
+};
+
 export default function ArticleList() {
   const articlesDir = path.join(process.cwd(), "src/app/blog/articles");
   const files = fs.readdirSync(articlesDir);

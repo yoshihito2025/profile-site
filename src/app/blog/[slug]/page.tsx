@@ -10,6 +10,13 @@ type Props = {
   params: { slug: string };
 };
 
+export const generateMetadata = () => {
+  return {
+    title: "Article page - Saladmaki",
+    description: "Article page of Saladmaki",
+  };
+};
+
 export async function generateStaticParams() {
   const dir = path.join(process.cwd(), "src/app/blog/articles");
   const files = fs.readdirSync(dir);

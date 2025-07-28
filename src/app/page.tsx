@@ -4,8 +4,8 @@ import { title } from "process";
 
 export const generateMetadata = () => {
   return {
-    title: "Saladmaki - Profile Site",
-    description: "Profile of Saladmaki",
+    title: "Profile page - Saladmaki",
+    description: "Profile page of Saladmaki",
   };
 };
 
