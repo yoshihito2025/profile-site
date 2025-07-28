@@ -2,7 +2,7 @@ export const dynamic = "force-static";
 
 import Link from "next/link";
 import styles from "./page.module.css";
-import { title } from "process";
+import Image from "next/image";
 
 export const generateMetadata = () => {
   return {
@@ -17,7 +17,7 @@ export default function Home() {
       <div className={styles.top}>
         <section>
           <h2>
-            Welcome to <span>SALADMAKI's</span> Profile site.
+            Welcome to <span>SALADMAKI&apos;s</span> Profile site.
           </h2>
           <p>
             I am a high school student with a passion for programming. And I
@@ -49,30 +49,40 @@ dreams:
           <section>
             <h3 className={styles.skills}>
               Skills
-              <img
+              <Image
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg"
                 loading="lazy"
                 alt="Unity"
+                width={100}
+                height={100}
               />
-              <img
+              <Image
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/blender/blender-original.svg"
                 loading="lazy"
                 alt="Blender"
+                width={100}
+                height={100}
               />
-              <img
+              <Image
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg"
                 loading="lazy"
                 alt="C"
+                width={100}
+                height={100}
               />
-              <img
+              <Image
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
                 loading="lazy"
                 alt="HTML5"
+                width={100}
+                height={100}
               />
-              <img
+              <Image
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
                 loading="lazy"
                 alt="JavaScript"
+                width={100}
+                height={100}
               />
             </h3>
             {/* code */}

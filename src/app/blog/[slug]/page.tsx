@@ -1,18 +1,12 @@
-export const dynamic = "force-static";
-
 import fs from "fs/promises";
 import path from "path";
 import matter from "gray-matter";
 import { remark } from "remark";
-import { notFound } from "next/navigation";
 import html from "remark-html";
+import { notFound } from "next/navigation";
 import styles from "./blog.module.css";
 
-type Props = {
-  params: {
-    slug: string;
-  };
-};
+export const dynamic = "force-static";
 
 export const generateMetadata = () => {
   return {
@@ -29,12 +23,8 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function ArticlePage({
-  params,
-}: {
-  params: { slug: string };
-}) {
-  const { slug } = await Promise.resolve(params);
+export default async function ArticlePage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
 
   const filePath = path.join(
     process.cwd(),
@@ -50,9 +40,7 @@ export default async function ArticlePage({
     notFound();
   }
 
-  // const fileContents = fs.readFileSync(filePath, "utf8");
   const { data, content } = matter(fileContents);
-
   const processedContent = await remark().use(html).process(content);
   const contentHtml = processedContent.toString();
 

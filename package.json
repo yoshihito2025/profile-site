@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/eslint-plugin-next": "^15.4.4",
     "gray-matter": "^4.0.3",
     "next": "15.4.4",
     "react": "19.1.0",

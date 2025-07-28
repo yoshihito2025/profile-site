@@ -39,7 +39,7 @@ export default function ArticleList() {
   return (
     <div className="contents">
       <div className="content">
-        <h1>Welcome to Saladmaki's site.</h1>
+        <h1>Welcome to Saladmaki&apos;s blog.</h1>
         <ul id="articles" className="articles">
           {articles.map(({ title, date, slug }) => (
             <li key={slug}>
