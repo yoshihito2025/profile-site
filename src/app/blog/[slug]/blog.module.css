@@ -32,7 +32,7 @@
     .content {
       grid-template-columns: 1fr 20fr 1fr;
       .container {
-        padding-inline-start: 15px;
+        padding-inline: 15px;
         h1 {
           font-size: 2rem;
         }
