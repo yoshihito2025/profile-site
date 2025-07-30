@@ -41,7 +41,7 @@
 @media (width <= 820px) {
   /* Font Style */
   .contents {
-    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-columns: 1fr 8fr 1fr;
     padding: 20px 0;
     .content {
       padding: 20px;
