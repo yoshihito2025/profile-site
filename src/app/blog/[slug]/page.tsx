@@ -5,6 +5,7 @@ import { remark } from "remark";
 import html from "remark-html";
 import { notFound } from "next/navigation";
 import styles from "./blog.module.css";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const dynamic = "force-static";
 
@@ -23,7 +24,11 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function ArticlePage({ params }: { params: Promise<{ slug: string }> }) {
+export default async function ArticlePage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
   const { slug } = await params;
 
   const filePath = path.join(
@@ -45,14 +50,23 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
   const contentHtml = processedContent.toString();
 
   return (
-    <div className={styles.contents}>
-      <div className={styles.content}>
-        <div className={styles.container}>
-          <h1>{data.date}</h1>
-          <h2>{data.title}</h2>
-          <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+    <>
+      <Breadcrumbs
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Blog", href: "/blog" },
+          { label: data.title },
+        ]}
+      />
+      <div className={styles.contents}>
+        <div className={styles.content}>
+          <div className={styles.container}>
+            <h1>{data.date}</h1>
+            <h2>{data.title}</h2>
+            <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

@@ -40,20 +40,21 @@
 
 @media (width <= 820px) {
   /* Font Style */
-  h1 {
-    font-size: 2rem;
-  }
   .contents {
     grid-template-columns: 1fr 5fr 1fr;
     padding: 20px 0;
     .content {
       padding: 20px;
+      h1 {
+        font-size: 1.6rem;
+      }
     }
   }
   .articles {
     grid-template-columns: 1fr 8fr 1fr;
     li {
       h2 {
+        font-size: 1.4rem;
         line-height: 1.4;
         margin-bottom: 10px;
       }

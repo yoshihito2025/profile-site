@@ -4,7 +4,8 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import Link from "next/link";
-import "./blog-content.css";
+import styles from "./articles.module.css";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 type ArticleMeta = {
   title: string;
@@ -37,20 +38,23 @@ export default function ArticleList() {
   });
 
   return (
-    <div className="contents">
-      <div className="content">
-        <h1>Welcome to Saladmaki&apos;s blog.</h1>
-        <ul id="articles" className="articles">
-          {articles.map(({ title, date, slug }) => (
-            <li key={slug}>
-              <Link href={`/blog/${slug}`}>
-                <h2>{date}</h2>
-                <p>{title}</p>
-              </Link>
-            </li>
-          ))}
-        </ul>
+    <>
+      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Blog" }]} />
+      <div className={styles.contents}>
+        <div className={styles.content}>
+          <h1>Welcome to Saladmaki&apos;s blog.</h1>
+          <ul id="articles" className={styles.articles}>
+            {articles.map(({ title, date, slug }) => (
+              <li key={slug}>
+                <Link href={`/blog/${slug}`}>
+                  <h2>{date}</h2>
+                  <p>{title}</p>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
