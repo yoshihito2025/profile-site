@@ -115,7 +115,10 @@ Game Development: Unity
                 : Simple calculator made in C language.
               </li>
               <li>
-                <Link href="https://github.com/saladmaki/realtime-chat-app">
+                <Link
+                  href="https://github.com/saladmaki/realtime-chat-app"
+                  target="_blank"
+                >
                   Real-time chat
                 </Link>
                 : Real-time chat application build with Express and Socket.IO.
