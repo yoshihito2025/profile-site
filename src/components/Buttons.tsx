@@ -19,15 +19,13 @@ export default function Buttons() {
   };
   const sharing = () => {
     location.href =
-      "line://msg/text/Saladmaki's website: " +
+      "line://msg/text/dodgerblu3's website: " +
       encodeURIComponent(location.href);
   };
   return (
     <>
       <div className="buttons">
-        <div className="print-msg">
-          {printMsg ? <div>{printMsg}</div> : ""}
-        </div>
+        <div className="print-msg">{printMsg ? <div>{printMsg}</div> : ""}</div>
         <button id="link" onClick={copying}>
           🔗
         </button>

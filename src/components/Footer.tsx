@@ -5,8 +5,8 @@ export default function Footer() {
     <footer>
       <small>
         Made with Next.js. <br />
-        Created By Saladmaki. <br />
-        &copy; 2025 Saladmaki. All rights reserved.
+        Created By dodgerblu3. <br />
+        &copy; 2025 dodgerblu3. All rights reserved.
       </small>
     </footer>
   );

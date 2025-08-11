@@ -6,8 +6,8 @@ import Image from "next/image";
 
 export const generateMetadata = () => {
   return {
-    title: "Profile page - Saladmaki",
-    description: "Profile page of Saladmaki",
+    title: "Profile page - dodgerblu3",
+    description: "Profile page of dodgerblu3",
   };
 };
 
@@ -17,7 +17,7 @@ export default function Home() {
       <div className={styles.top}>
         <section>
           <h2>
-            Welcome to <span>SALADMAKI&apos;s</span> Profile site.
+            Welcome to <span>dodgerblu3&apos;s</span> Profile site.
           </h2>
           <p>
             I am a high school student with a passion for programming. And I
@@ -32,7 +32,7 @@ export default function Home() {
             {/* code */}
             <pre>
               <code>
-                {`name: Saladmaki
+                {`name: dodgerblu3
 age: 15
 bloodType: A
 hobbies:
@@ -107,7 +107,7 @@ Game Development: Unity
             <ul>
               <li>
                 <Link
-                  href="https://github.com/saladmaki/calculator"
+                  href="https://github.com/dodgerblu3/calculator"
                   target="_blank"
                 >
                   Simple calculator
@@ -116,7 +116,7 @@ Game Development: Unity
               </li>
               <li>
                 <Link
-                  href="https://github.com/saladmaki/realtime-chat-app"
+                  href="https://github.com/dodgerblu3/realtime-chat-app"
                   target="_blank"
                 >
                   Real-time chat

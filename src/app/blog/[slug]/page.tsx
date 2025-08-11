@@ -11,8 +11,8 @@ export const dynamic = "force-static";
 
 export const generateMetadata = () => {
   return {
-    title: "Article page - Saladmaki",
-    description: "Article page of Saladmaki",
+    title: "Article page - dodgerblu3",
+    description: "Article page of dodgerblu3",
   };
 };
 
