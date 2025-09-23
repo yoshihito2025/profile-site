@@ -15,8 +15,8 @@ type ArticleMeta = {
 
 export const generateMetadata = () => {
   return {
-    title: "Blog page - dodgerblu3",
-    description: "Blog page of dodgerblu3",
+    title: "Blog page - yoshihito2025",
+    description: "Blog page of yoshihito2025",
   };
 };
 
@@ -42,7 +42,7 @@ export default function ArticleList() {
       <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Blog" }]} />
       <div className={styles.contents}>
         <div className={styles.content}>
-          <h1>Welcome to dodgerblu3&apos;s blog.</h1>
+          <h1>Welcome to yoshihito2025&apos;s blog.</h1>
           <ul id="articles" className={styles.articles}>
             {articles.map(({ title, date, slug }) => (
               <li key={slug}>

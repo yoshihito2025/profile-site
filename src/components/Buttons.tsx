@@ -19,7 +19,7 @@ export default function Buttons() {
   };
   const sharing = () => {
     location.href =
-      "line://msg/text/dodgerblu3's website: " +
+      "line://msg/text/yoshihito2025's website: " +
       encodeURIComponent(location.href);
   };
   return (

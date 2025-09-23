@@ -40,11 +40,11 @@ export default function Header() {
       <header>
         <div className="header-container">
           <Link href="/">
-            <h1 className={rubik.className}>dodgerblu3</h1>
+            <h1 className={rubik.className}>yoshihito2025</h1>
           </Link>
           <ul>
             <li>
-              <Link href="https://github.com/dodgerblu3" target="_blank">
+              <Link href="https://github.com/yoshihito2025" target="_blank">
                 GitHub
               </Link>
             </li>
@@ -64,7 +64,7 @@ export default function Header() {
             width={100}
             height={100}
             src="/logo.svg"
-            alt="dodgerblu3's Logo"
+            alt="yoshihito2025's Logo"
             className="logo"
           />
         </div>
