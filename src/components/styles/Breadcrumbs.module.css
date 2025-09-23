@@ -3,6 +3,8 @@
   align-items: center;
   justify-content: center;
   padding-block: 30px;
+  margin-inline: 20px;
+  flex-wrap: wrap;
   li {
     .separator {
       margin: 0.5rem;

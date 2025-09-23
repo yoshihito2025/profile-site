@@ -61,8 +61,8 @@ export default async function ArticlePage({
       <div className={styles.contents}>
         <div className={styles.content}>
           <div className={styles.container}>
-            <h1>{data.date}</h1>
-            <h2>{data.title}</h2>
+            <p>{data.date}</p>
+            <h1>{data.title}</h1>
             <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
           </div>
         </div>
