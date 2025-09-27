@@ -49,11 +49,8 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <Link
-                href="https://www.instagram.com/yoshihito.2025"
-                target="_blank"
-              >
-                Instagram
+              <Link href="https://x.com/yoshihito_2025" target="_blank">
+                X
               </Link>
             </li>
           </ul>
