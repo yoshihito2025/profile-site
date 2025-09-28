@@ -259,6 +259,9 @@ footer {
   /* Header style */
   header .header-container {
     margin: 10px;
+    .date {
+      width: 100%;
+    }
   }
   .logo {
     right: 16px;
